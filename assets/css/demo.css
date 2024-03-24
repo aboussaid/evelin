@@ -32,6 +32,11 @@
   font-size: 1.375rem;
 }
 
+.app-brand-text.demo span{
+  color: #aaaaaa;
+  font-size: 0.75rem;
+}
+
 /* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
 .layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
   padding-top: 64px !important;
