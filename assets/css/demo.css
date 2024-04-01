@@ -23,18 +23,12 @@
 }
 
 .app-brand-logo.demo svg {
-  width: 31px;
+  width: 35px;
   height: 24px;
-  border: 1px solid #eae8fd
 }
 
 .app-brand-text.demo {
   font-size: 1.375rem;
-}
-
-.app-brand-text.demo span{
-  color: #aaaaaa;
-  font-size: 0.75rem;
 }
 
 /* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
@@ -132,40 +126,4 @@
 .layout-demo-info {
   text-align: center;
   margin-top: 1rem;
-}
-
-.menu-icon.icon-naissance{
-  background: url(../img/aside/naissance.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-wedding{
-  background: url(../img/aside/wedding.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-tomb{
-  background: url(../img/aside/tomb.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-birth-certificate{
-  background: url(../img/aside/birth-certificate.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-coffin{
-  background: url(../img/aside/coffin.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-autre{
-  background: url(../img/aside/autre.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
-}
-.menu-icon.icon-justice{
-  background: url(../img/aside/justice.svg) center no-repeat;
-  background-size: contain;
-  height: 22px;
 }
