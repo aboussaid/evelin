@@ -164,48 +164,70 @@
     async: false
   }).responseJSON;
 
-  // Earning Reports Tabs Orders
+  // Earning Reports Tabs Naissance
   // --------------------------------------------------------------------
-  const statistiquesTabsOrdersEl = document.querySelector('#statistiquesTabsOrders'),
-    statistiquesTabsOrdersConfig = statistiquesBarChart(
+  const statistiquesTabsNaissanceEl = document.querySelector('#statistiquesTabsNaissance'),
+    statistiquesTabsNaissanceConfig = statistiquesBarChart(
       statistiquesChart['data'][0]['chart_data'],
       statistiquesChart['data'][0]['active_option']
     );
-  if (typeof statistiquesTabsOrdersEl !== undefined && statistiquesTabsOrdersEl !== null) {
-    const statistiquesTabsOrders = new ApexCharts(statistiquesTabsOrdersEl, statistiquesTabsOrdersConfig);
-    statistiquesTabsOrders.render();
+  if (typeof statistiquesTabsNaissanceEl !== undefined && statistiquesTabsNaissanceEl !== null) {
+    const statistiquesTabsNaissance = new ApexCharts(statistiquesTabsNaissanceEl, statistiquesTabsNaissanceConfig);
+    statistiquesTabsNaissance.render();
   }
-  // Earning Reports Tabs Sales
+  // Earning Reports Tabs Reconnaisance
   // --------------------------------------------------------------------
-  const statistiquesTabsSalesEl = document.querySelector('#statistiquesTabsSales'),
-    statistiquesTabsSalesConfig = statistiquesBarChart(
+  const statistiquesTabsReconnaisanceEl = document.querySelector('#statistiquesTabsReconnaisance'),
+    statistiquesTabsReconnaisanceConfig = statistiquesBarChart(
       statistiquesChart['data'][1]['chart_data'],
       statistiquesChart['data'][1]['active_option']
     );
-  if (typeof statistiquesTabsSalesEl !== undefined && statistiquesTabsSalesEl !== null) {
-    const statistiquesTabsSales = new ApexCharts(statistiquesTabsSalesEl, statistiquesTabsSalesConfig);
-    statistiquesTabsSales.render();
+  if (typeof statistiquesTabsReconnaisanceEl !== undefined && statistiquesTabsReconnaisanceEl !== null) {
+    const statistiquesTabsReconnaisance = new ApexCharts(
+      statistiquesTabsReconnaisanceEl,
+      statistiquesTabsReconnaisanceConfig
+    );
+    statistiquesTabsReconnaisance.render();
   }
-  // Earning Reports Tabs Profit
+  // Earning Reports Tabs Mariage
   // --------------------------------------------------------------------
-  const statistiquesTabsProfitEl = document.querySelector('#statistiquesTabsProfit'),
-    statistiquesTabsProfitConfig = statistiquesBarChart(
+  const statistiquesTabsMariageEl = document.querySelector('#statistiquesTabsMariage'),
+    statistiquesTabsMariageConfig = statistiquesBarChart(
       statistiquesChart['data'][2]['chart_data'],
       statistiquesChart['data'][2]['active_option']
     );
-  if (typeof statistiquesTabsProfitEl !== undefined && statistiquesTabsProfitEl !== null) {
-    const statistiquesTabsProfit = new ApexCharts(statistiquesTabsProfitEl, statistiquesTabsProfitConfig);
-    statistiquesTabsProfit.render();
+  if (typeof statistiquesTabsMariageEl !== undefined && statistiquesTabsMariageEl !== null) {
+    const statistiquesTabsMariage = new ApexCharts(statistiquesTabsMariageEl, statistiquesTabsMariageConfig);
+    statistiquesTabsMariage.render();
   }
-  // Earning Reports Tabs Income
+  // Earning Reports Tabs Deces
   // --------------------------------------------------------------------
-  const statistiquesTabsIncomeEl = document.querySelector('#statistiquesTabsIncome'),
-    statistiquesTabsIncomeConfig = statistiquesBarChart(
+  const statistiquesTabsDecesEl = document.querySelector('#statistiquesTabsDeces'),
+    statistiquesTabsDecesConfig = statistiquesBarChart(
       statistiquesChart['data'][3]['chart_data'],
       statistiquesChart['data'][3]['active_option']
     );
-  if (typeof statistiquesTabsIncomeEl !== undefined && statistiquesTabsIncomeEl !== null) {
-    const statistiquesTabsIncome = new ApexCharts(statistiquesTabsIncomeEl, statistiquesTabsIncomeConfig);
-    statistiquesTabsIncome.render();
+  if (typeof statistiquesTabsDecesEl !== undefined && statistiquesTabsDecesEl !== null) {
+    const statistiquesTabsDeces = new ApexCharts(statistiquesTabsDecesEl, statistiquesTabsDecesConfig);
+    statistiquesTabsDeces.render();
+  }
+
+  // Earning Reports Tabs Divorce
+  // --------------------------------------------------------------------
+  const statistiquesTabsDivorceEl = document.querySelector('#statistiquesTabsDivorce'),
+    statistiquesTabsDivorceConfig = statistiquesBarChart(
+      statistiquesChart['data'][2]['chart_data'],
+      statistiquesChart['data'][2]['active_option']
+    );
+  if (typeof statistiquesTabsDivorceEl !== undefined && statistiquesTabsDivorceEl !== null) {
+    const statistiquesTabsDivorce = new ApexCharts(statistiquesTabsDivorceEl, statistiquesTabsDivorceConfig);
+    statistiquesTabsDivorce.render();
+  }
+
+  const statistiqueCommune = document.querySelector('#statistique-commune .card-body');
+  if (statistiqueCommune) {
+    new PerfectScrollbar(statistiqueCommune, {
+      wheelPropagation: false
+    });
   }
 })();

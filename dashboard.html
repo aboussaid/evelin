@@ -147,7 +147,7 @@
           <!-- Navbar -->
 
           <nav
-            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar">
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
               <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
@@ -172,17 +172,17 @@
                 <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <!-- <i class="ti ti-language rounded-circle ti-md"></i> -->
-                    <img src="assets/vendor/fonts/flags/1x1/mg.svg" width="26px" style="border: 1px solid #f7f6f9" />
+                    <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26px" style="border: 1px solid #f7f6f9" />
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);" data-language="en" data-text-direction="ltr">
-                        <span class="align-middle">English</span>
+                        <span class="align-middle">Anglais</span>
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="javascript:void(0);" data-language="fr" data-text-direction="ltr">
-                        <span class="align-middle">French</span>
+                        <span class="align-middle">Français</span>
                       </a>
                     </li>
                   </ul>
@@ -404,10 +404,10 @@
             <!-- Content -->
 
             <div class="container-fluid flex-grow-1 container-p-y">
-              <div class="row">
+              <div class="row h-100">
                 <!-- Statistiques Tabs-->
-                <div class="col-12 col-xl-8 mb-4">
-                  <div class="card">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <div class="card h-100">
                     <div class="card-header d-flex justify-content-between">
                       <div class="card-title mb-0">
                         <h5 class="mb-0">Statistiques</h5>
@@ -425,7 +425,7 @@
                             aria-controls="navs-naissance-id"
                             aria-selected="true">
                             <div class="badge bg-label-secondary rounded p-2">
-                              <i class="ti ti-chart-bar ti-sm"></i>
+                              <i class="fa-solid fa-baby ti-sm"></i>
                             </div>
                             <h6 class="tab-widget-title mb-0 mt-2">Naissance</h6>
                           </a>
@@ -440,7 +440,7 @@
                             aria-controls="navs-reconnaissance-id"
                             aria-selected="false">
                             <div class="badge bg-label-secondary rounded p-2">
-                              <i class="ti ti-chart-bar ti-sm"></i>
+                              <i class="fa-solid fa-fingerprint ti-sm"></i>
                             </div>
                             <h6 class="tab-widget-title mb-0 mt-2">Reconnaissance</h6>
                           </a>
@@ -455,7 +455,7 @@
                             aria-controls="navs-mariage-id"
                             aria-selected="false">
                             <div class="badge bg-label-secondary rounded p-2">
-                              <i class="ti ti-chart-bar ti-sm"></i>
+                              <i class="icon icon-wedding ti-sm"></i>
                             </div>
                             <h6 class="tab-widget-title mb-0 mt-2">Mariage</h6>
                           </a>
@@ -470,9 +470,24 @@
                             aria-controls="navs-deces-id"
                             aria-selected="false">
                             <div class="badge bg-label-secondary rounded p-2">
-                              <i class="ti ti-chart-bar ti-sm"></i>
+                              <i class="icon icon-tomb ti-sm"></i>
                             </div>
                             <h6 class="tab-widget-title mb-0 mt-2">Décès</h6>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            href="javascript:void(0);"
+                            class="nav-link btn d-flex flex-column align-items-center justify-content-center"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-divorce-id"
+                            aria-controls="navs-divorce-id"
+                            aria-selected="false">
+                            <div class="badge bg-label-secondary rounded p-2">
+                              <i class="icon icon-divorce ti-sm"></i>
+                            </div>
+                            <h6 class="tab-widget-title mb-0 mt-2">Divorce</h6>
                           </a>
                         </li>
                         <li class="nav-item">
@@ -488,86 +503,152 @@
                       </ul>
                       <div class="tab-content p-0 ms-0 ms-sm-2">
                         <div class="tab-pane fade show active" id="navs-naissance-id" role="tabpanel">
-                          <div id="statistiquesTabsOrders"></div>
+                          <div id="statistiquesTabsNaissance"></div>
                         </div>
                         <div class="tab-pane fade" id="navs-reconnaissance-id" role="tabpanel">
-                          <div id="statistiquesTabsSales"></div>
+                          <div id="statistiquesTabsReconnaisance"></div>
                         </div>
                         <div class="tab-pane fade" id="navs-mariage-id" role="tabpanel">
-                          <div id="statistiquesTabsProfit"></div>
+                          <div id="statistiquesTabsMariage"></div>
                         </div>
                         <div class="tab-pane fade" id="navs-deces-id" role="tabpanel">
-                          <div id="statistiquesTabsIncome"></div>
+                          <div id="statistiquesTabsDeces"></div>
+                        </div>
+                        <div class="tab-pane fade" id="navs-divorce-id" role="tabpanel">
+                          <div id="statistiquesTabsDivorce"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Activity Timeline -->
-                <div class="col-12 col-xl-4">
-                  <div class="card">
+                <div class="col-12 col-xl-4 mb-4 mb-xl-0" id="statistique-commune">
+                  <div class="card h-100">
                     <div class="card-header d-flex justify-content-between">
-                      <h5 class="card-title m-0 me-2 pt-1 mb-2 d-flex align-items-center">
-                        <i class="ti ti-list-details ms-n1 me-2"></i> Activity Timeline
-                      </h5>
-                      <div class="dropdown">
-                        <button
-                          class="btn p-0"
-                          type="button"
-                          id="timelineWapper"
-                          data-bs-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false">
-                          <i class="ti ti-dots-vertical ti-sm text-muted"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="timelineWapper">
-                          <a class="dropdown-item" href="javascript:void(0);">Download</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-                          <a class="dropdown-item" href="javascript:void(0);">Share</a>
-                        </div>
+                      <div class="card-title mb-0">
+                        <h5 class="m-0 me-2">Statistique par commune</h5>
                       </div>
                     </div>
-                    <div class="card-body pb-0">
-                      <ul class="timeline ms-1 mb-0">
-                        <li class="timeline-item timeline-item-transparent ps-4">
-                          <span class="timeline-point timeline-point-warning"></span>
-                          <div class="timeline-event">
-                            <div class="timeline-header">
-                              <h6 class="mb-0">Create a new project for client</h6>
-                              <small class="text-muted">2 Day Ago</small>
+                    <div class="card-body">
+                      <ul class="p-0 m-0">
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie d'Aboisso</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">12,346</p>
+                              <p class="ms-3 text-success mb-0">0.3%</p>
                             </div>
-                            <p class="mb-0">Add files to new design folder</p>
                           </div>
                         </li>
-                        <li class="timeline-item timeline-item-transparent ps-4">
-                          <span class="timeline-point timeline-point-primary"></span>
-                          <div class="timeline-event">
-                            <div class="timeline-header">
-                              <h6 class="mb-0">Create a new project for client</h6>
-                              <small class="text-muted">2 Day Ago</small>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie d'Adjamé</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">9,321</p>
+                              <p class="ms-3 text-success mb-0">5.8%</p>
                             </div>
-                            <p class="mb-0">Add files to new design folder</p>
                           </div>
                         </li>
-                        <li class="timeline-item timeline-item-transparent ps-4">
-                          <span class="timeline-point timeline-point-info"></span>
-                          <div class="timeline-event">
-                            <div class="timeline-header">
-                              <h6 class="mb-0">Create a new project for client</h6>
-                              <small class="text-muted">2 Day Ago</small>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie d'Adzopé</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">8,432</p>
+                              <p class="ms-3 text-success mb-0">21.3%</p>
                             </div>
-                            <p class="mb-0">Add files to new design folder</p>
                           </div>
                         </li>
-                        <li class="timeline-item timeline-item-transparent ps-4 border-transparent">
-                          <span class="timeline-point timeline-point-secondary"></span>
-                          <div class="timeline-event">
-                            <div class="timeline-header">
-                              <h6 class="mb-0">Create a new project for client</h6>
-                              <small class="text-muted">2 Day Ago</small>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie d'Agboville</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">12,346</p>
+                              <p class="ms-3 text-success mb-0">0.3%</p>
                             </div>
-                            <p class="mb-0">Add files to new design folder</p>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie d'Attecoubé</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">16,346</p>
+                              <p class="ms-3 text-success mb-0">5.3%</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie de Bondoukou</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">4,123</p>
+                              <p class="ms-3 text-success mb-0">18.3%</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie de Bongouanou</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">1,324</p>
+                              <p class="ms-3 text-success mb-0">12,5%</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie de Bonon</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">12,346</p>
+                              <p class="ms-3 text-success mb-0">0.3%</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie de Boundiali</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">2,543</p>
+                              <p class="ms-3 text-success mb-0">2.7%</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 pb-1 d-flex justify-content-between align-items-center">
+                          <div class="badge bg-label-secondary rounded p-2">
+                            <i class="ti ti-building ti-sm text-body"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100 flex-wrap">
+                            <h6 class="mb-0 ms-2">Mairie de Cocody</h6>
+                            <div class="d-flex">
+                              <p class="mb-0 fw-medium">10,123</p>
+                              <p class="ms-3 text-success mb-0">9.4%</p>
+                            </div>
                           </div>
                         </li>
                       </ul>
