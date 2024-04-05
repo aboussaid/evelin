@@ -493,116 +493,116 @@ if (typeof $ !== 'undefined') {
                 cursor: 'active',
                 suggestion: 'suggestion d-flex justify-content-between px-3 py-2 w-100'
               }
-            },
+            }
             // ? Add/Update blocks as per need
             // Pages
-            {
-              name: 'pages',
-              display: 'name',
-              limit: 5,
-              source: filterConfig(searchData.pages),
-              templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Pages</h6>',
-                suggestion: function ({ url, icon, name }) {
-                  return (
-                    '<a href="' +
-                    url +
-                    '">' +
-                    '<div>' +
-                    '<i class="ti ' +
-                    icon +
-                    ' me-2"></i>' +
-                    '<span class="align-middle">' +
-                    name +
-                    '</span>' +
-                    '</div>' +
-                    '</a>'
-                  );
-                },
-                notFound:
-                  '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Pages</h6>' +
-                  '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
-                  '</div>'
-              }
-            },
+            // {
+            //   name: 'pages',
+            //   display: 'name',
+            //   limit: 5,
+            //   source: filterConfig(searchData.pages),
+            //   templates: {
+            //     header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Pages</h6>',
+            //     suggestion: function ({ url, icon, name }) {
+            //       return (
+            //         '<a href="' +
+            //         url +
+            //         '">' +
+            //         '<div>' +
+            //         '<i class="ti ' +
+            //         icon +
+            //         ' me-2"></i>' +
+            //         '<span class="align-middle">' +
+            //         name +
+            //         '</span>' +
+            //         '</div>' +
+            //         '</a>'
+            //       );
+            //     },
+            //     notFound:
+            //       '<div class="not-found px-3 py-2">' +
+            //       '<h6 class="suggestions-header text-primary mb-2">Pages</h6>' +
+            //       '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
+            //       '</div>'
+            //   }
+            // },
             // Files
-            {
-              name: 'files',
-              display: 'name',
-              limit: 4,
-              source: filterConfig(searchData.files),
-              templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Files</h6>',
-                suggestion: function ({ src, name, subtitle, meta }) {
-                  return (
-                    '<a href="javascript:;">' +
-                    '<div class="d-flex w-50">' +
-                    '<img class="me-3" src="' +
-                    assetsPath +
-                    src +
-                    '" alt="' +
-                    name +
-                    '" height="32">' +
-                    '<div class="w-75">' +
-                    '<h6 class="mb-0">' +
-                    name +
-                    '</h6>' +
-                    '<small class="text-muted">' +
-                    subtitle +
-                    '</small>' +
-                    '</div>' +
-                    '</div>' +
-                    '<small class="text-muted">' +
-                    meta +
-                    '</small>' +
-                    '</a>'
-                  );
-                },
-                notFound:
-                  '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Files</h6>' +
-                  '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
-                  '</div>'
-              }
-            },
+            // {
+            //   name: 'files',
+            //   display: 'name',
+            //   limit: 4,
+            //   source: filterConfig(searchData.files),
+            //   templates: {
+            //     header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Files</h6>',
+            //     suggestion: function ({ src, name, subtitle, meta }) {
+            //       return (
+            //         '<a href="javascript:;">' +
+            //         '<div class="d-flex w-50">' +
+            //         '<img class="me-3" src="' +
+            //         assetsPath +
+            //         src +
+            //         '" alt="' +
+            //         name +
+            //         '" height="32">' +
+            //         '<div class="w-75">' +
+            //         '<h6 class="mb-0">' +
+            //         name +
+            //         '</h6>' +
+            //         '<small class="text-muted">' +
+            //         subtitle +
+            //         '</small>' +
+            //         '</div>' +
+            //         '</div>' +
+            //         '<small class="text-muted">' +
+            //         meta +
+            //         '</small>' +
+            //         '</a>'
+            //       );
+            //     },
+            //     notFound:
+            //       '<div class="not-found px-3 py-2">' +
+            //       '<h6 class="suggestions-header text-primary mb-2">Files</h6>' +
+            //       '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
+            //       '</div>'
+            //   }
+            // },
             // Members
-            {
-              name: 'members',
-              display: 'name',
-              limit: 4,
-              source: filterConfig(searchData.members),
-              templates: {
-                header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Members</h6>',
-                suggestion: function ({ name, src, subtitle }) {
-                  return (
-                    '<a href="app-user-view-account.html">' +
-                    '<div class="d-flex align-items-center">' +
-                    '<img class="rounded-circle me-3" src="' +
-                    assetsPath +
-                    src +
-                    '" alt="' +
-                    name +
-                    '" height="32">' +
-                    '<div class="user-info">' +
-                    '<h6 class="mb-0">' +
-                    name +
-                    '</h6>' +
-                    '<small class="text-muted">' +
-                    subtitle +
-                    '</small>' +
-                    '</div>' +
-                    '</div>' +
-                    '</a>'
-                  );
-                },
-                notFound:
-                  '<div class="not-found px-3 py-2">' +
-                  '<h6 class="suggestions-header text-primary mb-2">Members</h6>' +
-                  '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
-                  '</div>'
-              }
-            }
+            // {
+            //   name: 'members',
+            //   display: 'name',
+            //   limit: 4,
+            //   source: filterConfig(searchData.members),
+            //   templates: {
+            //     header: '<h6 class="suggestions-header text-primary mb-0 mx-3 mt-3 pb-2">Members</h6>',
+            //     suggestion: function ({ name, src, subtitle }) {
+            //       return (
+            //         '<a href="app-user-view-account.html">' +
+            //         '<div class="d-flex align-items-center">' +
+            //         '<img class="rounded-circle me-3" src="' +
+            //         assetsPath +
+            //         src +
+            //         '" alt="' +
+            //         name +
+            //         '" height="32">' +
+            //         '<div class="user-info">' +
+            //         '<h6 class="mb-0">' +
+            //         name +
+            //         '</h6>' +
+            //         '<small class="text-muted">' +
+            //         subtitle +
+            //         '</small>' +
+            //         '</div>' +
+            //         '</div>' +
+            //         '</a>'
+            //       );
+            //     },
+            //     notFound:
+            //       '<div class="not-found px-3 py-2">' +
+            //       '<h6 class="suggestions-header text-primary mb-2">Members</h6>' +
+            //       '<p class="py-2 mb-0"><i class="ti ti-alert-circle ti-xs me-2"></i> No Results Found</p>' +
+            //       '</div>'
+            //   }
+            // }
           )
           //On typeahead result render.
           .bind('typeahead:render', function () {
@@ -650,21 +650,26 @@ if (typeof $ !== 'undefined') {
     }
   });
 
-  const flatpickrDate = document.querySelector('.flatpickr-date'),
-    flatpickrTime = document.querySelector('.flatpickr-times');
+  const flatpickrDates = document.querySelectorAll('.flatpickr-date'),
+    flatpickrTimes = document.querySelectorAll('.flatpickr-times'),
+    flatpickrYears = document.querySelectorAll('.flatpickr-years');
 
   // Date
-  if (flatpickrDate) {
-    flatpickrDate.flatpickr({
-      monthSelectorType: 'static'
+  if (flatpickrDates.length > 0) {
+    flatpickrDates.forEach(function (element) {
+      flatpickr(element, {
+        monthSelectorType: 'static'
+      });
     });
   }
 
   // Time
-  if (flatpickrTime) {
-    flatpickrTime.flatpickr({
-      enableTime: true,
-      noCalendar: true
+  if (flatpickrTimes.length > 0) {
+    flatpickrTimes.forEach(function (element) {
+      flatpickr(element, {
+        enableTime: true,
+        noCalendar: true
+      });
     });
   }
 }

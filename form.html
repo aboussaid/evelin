@@ -161,7 +161,251 @@
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
+              <div class="navbar-nav align-items-center flex-row">
+                <li class="nav-item dropdown-shortcuts navbar-dropdown me-2 me-xl-0">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-filter-plus ti-md"></i>
+                  </a>
+                  <div class="dropdown-menu advanced-search py-0 w-100 position-absolute">
+                    <div class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Recherche avancée</h5>
+                      </div>
+                    </div>
+                    <div class="container-fluid scrollable-container py-3">
+                      <h6>Critères concernant le centre d'état civil</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Centre d'Etat Civil</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select" data-allow-clear="true">
+                                <option value="">Toutes</option>
+                                <option value="47">Mairie de Nikolo</option>
+                                <option value="44">Sous Prefecture de Sokouraba</option>
+                                <option value="35">Mairie d'Aboisso</option>
+                                <option value="15">Mairie d'Adjamé</option>
+                                <option value="12">Mairie d'Adzopé</option>
+                                <option value="32" selected="selected">Mairie d'Agboville</option>
+                                <option value="1">Mairie d'Attecoubé</option>
+                                <option value="13">Mairie de Bondoukou</option>
+                                <option value="34">Mairie de Bongouanou</option>
+                                <option value="53">Mairie de Bonon</option>
+                                <option value="33">Mairie de Boundiali</option>
+                                <option value="5">Mairie de Cocody</option>
+                                <option value="3">Mairie de Dimbokro</option>
+                                <option value="16">Mairie de Djébonoua</option>
+                                <option value="29">Mairie de Fandasso</option>
+                                <option value="48">Mairie de Ferkessedougou</option>
+                                <option value="43">Mairie de Ganaoni</option>
+                                <option value="14">Mairie de Grand-Bassam</option>
+                                <option value="42">Mairie de Kanakono</option>
+                                <option value="6">Mairie de Koumassi</option>
+                                <option value="31">Mairie de Kouto</option>
+                                <option value="17">Mairie de Man</option>
+                                <option value="7">Mairie de Marcory</option>
+                                <option value="46">Mairie de Napie</option>
+                                <option value="10">Mairie de San-Pédro</option>
+                                <option value="18">Mairie de Sinematiali</option>
+                                <option value="28">Mairie de Toumodi</option>
+                                <option value="49">Mairie de Toumoukoro</option>
+                                <option value="2">Mairie de Yamoussoukro</option>
+                                <option value="8">Mairie de Yopougon</option>
+                                <option value="9">Mairie du Plateau</option>
+                                <option value="60">MARSEILLE</option>
+                                <option value="57">Ministère des Affaires étrangères</option>
+                                <option value="59">&nbsp;&nbsp;&nbsp;Ambassade de Côte d’Ivoire à Paris</option>
+                                <option value="58">&nbsp;&nbsp;&nbsp;Consulat Général de Côte d’Ivoire à Lyon</option>
+                                <option value="38">Sous-préfecture d'Aboisso</option>
+                                <option value="22">Sous-préfecture d'Adzopé</option>
+                                <option value="45">Sous-préfecture d'Ettrokro</option>
+                                <option value="23">Sous-préfecture de Bondoukou</option>
+                                <option value="36">Sous Prefecture de Bongounou</option>
+                                <option value="54">Sous prefecture de Bonon</option>
+                                <option value="40">Sous-Préfecture de Boundiali</option>
+                                <option value="39">Sous - prefecture de Dimbokro</option>
+                                <option value="24">Sous-préfecture de Djébonoua</option>
+                                <option value="50">Sous-Préfecture de Ferkessedougou</option>
+                                <option value="19">Sous-préfecture de Gabiadji</option>
+                                <option value="37">Sous-préfecture de Grand-Morié</option>
+                                <option value="41">Sous-prefecture de kouto</option>
+                                <option value="20">Sous-préfecture de Man</option>
+                                <option value="51">Sous-préfecture de Ouangolodougou</option>
+                                <option value="11">Sous-Préfecture de San-Pédro</option>
+                                <option value="25">Sous-préfecture de Sédiogo</option>
+                                <option value="26">Sous-préfecture de Sinématiali</option>
+                                <option value="21">Sous-préfecture de Songon</option>
+                                <option value="52">Sous-prefecture de Toumoukoro</option>
+                                <option value="55">Yopougon-Attié (TEST)</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Type d'Acte</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select" data-allow-clear="true">
+                                <option value="" selected="selected">Tous</option>
+                                <option value="4">Acte de reconnaissance</option>
+                                <option value="2">Acte de décès</option>
+                                <option value="1">Acte de naissance</option>
+                                <option value="7">Enfant sans vie</option>
+                                <option value="3">Acte de mariage</option>
+                                <option value="12">Déclaration de Naissance</option>
+                                <option value="13">Déclaration de Décès</option>
+                                <option value="15">Décision de justice</option>
+                                <option value="16">Procès verbal de décourverte</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4 mx-n4" />
+                      <h6>Critères concernant la ou les personnes</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Nom</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Prénom</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Sexe</label>
+                            <div class="col-sm-9">
+                              <div class="form-control border-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="sexe"
+                                    id="sexe-masculin"
+                                    value="0" />
+                                  <label class="form-check-label" for="sexe-masculin">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="sexe-feminin"
+                                    value="1" />
+                                  <label class="form-check-label" for="sexe-feminin">Féminin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="enfant" id="sexe-tous" value="1" />
+                                  <label class="form-check-label" for="sexe-tous">Tous</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Rôle</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select">
+                                <option value="" selected="selected">Tous</option>
+                                <option value="1">Intéressé</option>
+                                <option value="9">Mère de l'épouse</option>
+                                <option value="2">Père</option>
+                                <option value="10">Témoin</option>
+                                <option value="3">Mère</option>
+                                <option value="4">Epoux</option>
+                                <option value="5">Epouse</option>
+                                <option value="6">Père de l'époux</option>
+                                <option value="7">Mère de l'époux</option>
+                                <option value="8">Père de l'épouse</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4 mx-n4" />
+                      <h6>Critères concernant l'acte</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Statut</label>
+                            <div class="col-sm-9">
+                              <div class="form-control border-0">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="search-statut-1" value="1" />
+                                  <label class="form-check-label" for="search-statut-1">Actes finalisés</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="search-statut-2" value="2" />
+                                  <label class="form-check-label" for="search-statut-2">Actes non finalisés</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Période recherchée</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control flatpickr-date" placeholder="Du" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control flatpickr-date" placeholder="Au" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Numéro de l'acte</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="De" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="À" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Année du registre</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="De" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="À" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <div class="nav-item navbar-search-wrapper mb-0">
                   <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
                     <i class="ti ti-search ti-md me-2"></i>
@@ -1165,24 +1409,20 @@
     <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
     <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="assets/vendor/libs/hammer/hammer.js"></script>
-
     <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
-
     <script src="assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
     <script src="assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
     <script src="assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
     <script src="assets/vendor/libs/select2/select2.js"></script>
     <script src="assets/vendor/libs/@form-validation/popular.js"></script>
     <script src="assets/vendor/libs/@form-validation/bootstrap5.js"></script>
     <script src="assets/vendor/libs/@form-validation/auto-focus.js"></script>
-
-    <!-- Vendors JS -->
-    <script src="assets/vendor/libs/moment/moment.js"></script>
-    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
