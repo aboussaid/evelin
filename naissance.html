@@ -648,11 +648,11 @@
             <!-- Content -->
 
             <div class="container-fluid flex-grow-1 container-p-y">
-              <h4 class="py-3 mb-2">Naissance</h4>
+              <h4 class="mb-4">Naissance</h4>
 
               <div class="card mb-4">
                 <div class="card-widget-separator-wrapper">
-                  <div class="card-body card-widget-separator">
+                  <div class="card-body card-widget-separator py-3">
                     <div class="row gy-4 gy-sm-1">
                       <div class="col-sm-6 col-lg-3">
                         <div
@@ -736,8 +736,8 @@
                     <button
                       type="button"
                       class="btn btn-primary waves-effect waves-light ms-auto"
-                      data-bs-toggle="modal"
-                      data-bs-target="#newActe">
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasSelectActe">
                       <span class="ti-xs ti ti-plus me-1"></span>Nouveau
                     </button>
                   </div>
@@ -1079,6 +1079,195 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <!-- OffCanvas New Acte -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSelectActe">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Sélection d'un modèle</h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mx-0 flex-grow-0 pt-0 h-100">
+                  <form onSubmit="return false">
+                    <div class="content pt-3 pt-lg-0">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte1">Acte de naissance</label>
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte1" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte2"
+                                  >Transcription de jugement supplétif de naissance (Délai depassé)</label
+                                >
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte2" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte3">Déclaration de naissance d'un enfant trouvé</label>
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte3" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte4">Transcription de jugement d'adoption plénièr</label>
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte4" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte5"
+                                  >Jugement de rétablissement d'acte de naissance registre détruit (Art.90 Loi
+                                  2018-862)</label
+                                >
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte5" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte6">Naissance jamais déclarée (Loi spéciale 2018-863)</label>
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte6" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte7">Naissance pas encore déclarée (Art.13 Loi 2018-862)</label>
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte7" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte8"
+                                  >Transcription d'acte de naissance registre détruit (Loi spéciale 2018-863)</label
+                                >
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte8" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                          <div class="badge bg-label-secondary p-2 me-3 rounded">
+                            <i class="ti ti-file ti-md"></i>
+                          </div>
+                          <div class="d-flex justify-content-between w-100">
+                            <div class="me-2">
+                              <h6 class="mb-0">
+                                <label for="acte9"
+                                  >Transcription d'une ordonnance de rétablissement d’identité (Loi spéciale
+                                  2018-863)</label
+                                >
+                              </h6>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div class="form-check form-check-inline">
+                                <input name="details-radio" class="form-check-input" type="radio" value="" id="acte9" />
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="col-12 d-flex justify-content-between mt-4">
+                        <a href="form.html" class="btn btn-primary btn-next ms-auto">
+                          <span class="align-middle d-sm-inline-block d-none me-sm-1">Suivant</span>
+                          <i class="ti ti-arrow-right ti-xs"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
 
