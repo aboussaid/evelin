@@ -26,3 +26,10 @@
 .dark-style .bg-faq-section {
   background-color: rgba(134, 146, 208, 0.04);
 }
+
+.faq-body .nav-link i {
+  font-size: 22px;
+}
+.faq-body .tab-content .badge {
+  font-size: 28px;
+}
