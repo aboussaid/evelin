@@ -1544,3 +1544,8 @@ div#statistique-commune .card-body {
     height: 0;
   }
 }
+.jstree-anchor {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}

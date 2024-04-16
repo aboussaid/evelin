@@ -712,4 +712,17 @@ if (typeof $ !== 'undefined') {
       });
     });
   }
+
+  // Treeview
+  const basicTree = $('#jstree-basic');
+  if (basicTree.length) {
+    basicTree.jstree({
+      core: {
+        themes: {
+          name: 'default'
+        }
+      },
+      plugins: ['search']
+    });
+  }
 }

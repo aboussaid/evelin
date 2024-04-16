@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
     <link rel="stylesheet" href="assets/vendor/libs/dropzone/dropzone.css" />
     <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/jstree/jstree.css" />
 
     <!-- Page CSS -->
 
@@ -415,11 +416,16 @@
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item me-2 me-xl-0">
+                  <a class="nav-link">
+                    <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26px" alt="cote d'ivoire" />
+                  </a>
+                </li>
                 <!-- Language -->
                 <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <!-- <i class="ti ti-language rounded-circle ti-md"></i> -->
-                    <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26px" style="border: 1px solid #f7f6f9" />
+                    <i class="ti ti-world rounded-circle ti-md"></i>
+                    <!-- <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26px" style="border: 1px solid #f7f6f9" /> -->
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
@@ -1187,7 +1193,84 @@
                         </li>
                       </ul>
                       <div class="tab-content">
-                        <div class="tab-pane fade show active" id="navs-acte-actions" role="tabpanel"></div>
+                        <div class="tab-pane fade show active" id="navs-acte-actions" role="tabpanel">
+                          <div class="row">
+                            <div class="d-grid">
+                              <button
+                                class="btn btn-primary btn-sm"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFonctions"
+                                aria-expanded="false"
+                                aria-controls="collapseFonctions">
+                                Changer le type d'acte
+                              </button>
+                            </div>
+                            <div class="collapse" id="collapseFonctions">
+                              <div id="jstree-basic">
+                                <ul>
+                                  <li class="jstree-open" data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Acte de décès (5)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Acte de décès</li>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Découverte de corps sans vie</li>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>
+                                        Transcription d'un jugement déclaratif de décès
+                                      </li>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>
+                                        Jugement de rétablissement d'acte de décès registre détruit (Art.89 Loi
+                                        2018-862)
+                                      </li>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>
+                                        Transcription d'un jugement supplétif de décès (délai dépassé)
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Enfant sans vie (1)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Enfant sans vie</li>
+                                    </ul>
+                                  </li>
+                                  <li data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Déclaration de Naissance (1)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Déclaration de Naissance</li>
+                                    </ul>
+                                  </li>
+                                  <li data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Procès verbal de décourverte (1)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Procès verbal de décourverte</li>
+                                    </ul>
+                                  </li>
+                                  <li data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Déclaration de Décès (1)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Déclaration de Décès</li>
+                                    </ul>
+                                  </li>
+                                  <li data-jstree='{"icon" : "ti ti-folder"}'>
+                                    Décision de justice (1)
+                                    <ul>
+                                      <li data-jstree='{"icon" : "ti ti-file-text"}'>Décision de justice</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="d-grid">
+                              <button class="btn btn-primary btn-sm mt-3" type="button">Rectifier</button>
+                              <button class="btn btn-primary btn-sm mt-3" type="button">
+                                Répéter le type d'acte (Dupliquer)
+                              </button>
+                              <button class="btn btn-primary btn-sm mt-3" type="button">
+                                Créer une demande de livret
+                              </button>
+                              <button class="btn btn-danger btn-sm mt-3" type="button">Supprimer l'acte</button>
+                            </div>
+                          </div>
+                        </div>
                         <div class="tab-pane fade" id="navs-acte-notes" role="tabpanel">
                           <div class="row">
                             <div class="d-grid gap-2 col-12">
@@ -1918,6 +2001,7 @@
     <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <script src="assets/vendor/libs/dropzone/dropzone.js"></script>
     <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/jstree/jstree.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
