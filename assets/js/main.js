@@ -714,7 +714,8 @@ if (typeof $ !== 'undefined') {
   }
 
   // Treeview
-  const basicTree = $('#jstree-basic');
+  const basicTree = $('#jstree-basic'),
+    ValideChangeActe = document.querySelector('#ValiderChangementActe');
   if (basicTree.length) {
     basicTree.jstree({
       core: {
@@ -723,6 +724,18 @@ if (typeof $ !== 'undefined') {
         }
       },
       plugins: ['search']
+    });
+    basicTree.on('select_node.jstree', function (e, data) {
+      var selectedNode = basicTree.jstree(true).get_node(data.node);
+      if (selectedNode.children.length > 0) {
+        ValideChangeActe.classList.add('d-none');
+      } else {
+        ValideChangeActe.classList.remove('d-none');
+      }
+    });
+
+    basicTree.on('deselect_node.jstree', function (e, data) {
+      ValideChangeActe.classList.add('d-none');
     });
   }
 }
