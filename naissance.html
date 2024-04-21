@@ -54,6 +54,12 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="assets/js/config.js"></script>
+
+    <style>
+      .offcanvas {
+        --bs-offcanvas-width: 550px;
+      }
+    </style>
   </head>
 
   <body>
@@ -1128,10 +1134,9 @@
                       <div class="modal-body p-0">
                         <iframe
                           src="assets/pdf/pdf-test.pdf"
-                          width="100%"
-                          height="99%"
                           loading="lazy"
-                          title="PDF-file"></iframe>
+                          title="PDF-file"
+                          style="width: 100%; height: 99%"></iframe>
                         <button
                           type="button"
                           class="btn btn-icon btn-primary position-fixed top-50 end-0"
@@ -1146,11 +1151,6 @@
                   </div>
                 </div>
                 <!-- Offcanvas -->
-                <style>
-                  .offcanvas {
-                    --bs-offcanvas-width: 550px;
-                  }
-                </style>
                 <div
                   class="offcanvas offcanvas-end"
                   tabindex="-1"
@@ -1774,7 +1774,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte1">Acte de naissance</label>
+                                    <label for="acte-1">Acte de naissance</label>
                                   </h6>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -1784,7 +1784,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte1" />
+                                      id="acte-1" />
                                   </div>
                                 </div>
                               </div>
@@ -1796,7 +1796,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte2"
+                                    <label for="acte-2"
                                       >Transcription de jugement supplétif de naissance (Délai depassé)</label
                                     >
                                   </h6>
@@ -1808,7 +1808,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte2" />
+                                      id="acte-2" />
                                   </div>
                                 </div>
                               </div>
@@ -1820,7 +1820,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte3">Déclaration de naissance d'un enfant trouvé</label>
+                                    <label for="acte-3">Déclaration de naissance d'un enfant trouvé</label>
                                   </h6>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -1830,7 +1830,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte3" />
+                                      id="acte-3" />
                                   </div>
                                 </div>
                               </div>
@@ -1842,7 +1842,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte4">Transcription de jugement d'adoption plénièr</label>
+                                    <label for="acte-4">Transcription de jugement d'adoption plénièr</label>
                                   </h6>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -1852,7 +1852,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte4" />
+                                      id="acte-4" />
                                   </div>
                                 </div>
                               </div>
@@ -1864,7 +1864,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte5"
+                                    <label for="acte-5"
                                       >Jugement de rétablissement d'acte de naissance registre détruit (Art.90 Loi
                                       2018-862)</label
                                     >
@@ -1877,7 +1877,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte5" />
+                                      id="acte-5" />
                                   </div>
                                 </div>
                               </div>
@@ -1889,7 +1889,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte6">Naissance jamais déclarée (Loi spéciale 2018-863)</label>
+                                    <label for="acte-6">Naissance jamais déclarée (Loi spéciale 2018-863)</label>
                                   </h6>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -1899,7 +1899,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte6" />
+                                      id="acte-6" />
                                   </div>
                                 </div>
                               </div>
@@ -1911,7 +1911,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte7">Naissance pas encore déclarée (Art.13 Loi 2018-862)</label>
+                                    <label for="acte-7">Naissance pas encore déclarée (Art.13 Loi 2018-862)</label>
                                   </h6>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -1921,7 +1921,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte7" />
+                                      id="acte-7" />
                                   </div>
                                 </div>
                               </div>
@@ -1933,7 +1933,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte8"
+                                    <label for="acte-8"
                                       >Transcription d'acte de naissance registre détruit (Loi spéciale 2018-863)</label
                                     >
                                   </h6>
@@ -1945,7 +1945,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte8" />
+                                      id="acte-8" />
                                   </div>
                                 </div>
                               </div>
@@ -1957,7 +1957,7 @@
                               <div class="d-flex justify-content-between w-100">
                                 <div class="me-2">
                                   <h6 class="mb-0">
-                                    <label for="acte9"
+                                    <label for="acte-9"
                                       >Transcription d'une ordonnance de rétablissement d’identité (Loi spéciale
                                       2018-863)</label
                                     >
@@ -1970,7 +1970,7 @@
                                       class="form-check-input"
                                       type="radio"
                                       value=""
-                                      id="acte9" />
+                                      id="acte-9" />
                                   </div>
                                 </div>
                               </div>
