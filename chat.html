@@ -1,0 +1,1216 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer-starter">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Chat - EveLin</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontello.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/app-chat.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand">
+            <a href="dashboard.html" class="app-brand-link">
+              <span class="app-brand-logo">
+                <img src="assets/img/logo.png" class="img-fluid" alt="EveLin" />
+              </span>
+              <span class="app-brand-text menu-text fw-bold">CRVS</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <li class="menu-item">
+              <a href="naissance.html" class="menu-link">
+                <i class="menu-icon fa-solid fa-baby"></i>
+                <div>Naissance</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fa-solid fa-fingerprint"></i>
+                <div>Reconnaissance</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-wedding"></i>
+                <div>Mariage</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-tomb"></i>
+                <div>Décès</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-coffin"></i>
+                <div>Enfant sans vie</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-birth-certificate"></i>
+                <div>Déclaration de naissance</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-coffin"></i>
+                <div>Déclaration de décès</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon fontello-justice"></i>
+                <div>Décision de justice</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <i class="menu-icon ti ti-apps"></i>
+                <div>Autres</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="faq.html" class="menu-link">
+                <i class="menu-icon ti ti-info-square-rounded"></i>
+                <div>FAQ</div>
+              </a>
+            </li>
+
+            <!-- Dashboards -->
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Administration</span>
+            </li>
+            <li class="menu-item">
+              <a href="users.html" class="menu-link">
+                <i class="menu-icon ti ti-users"></i>
+                <div>Utilisateurs</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="roles.html" class="menu-link">
+                <i class="menu-icon ti ti-settings"></i>
+                <div>Rôles</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center flex-row">
+                <div class="nav-item dropdown-shortcuts navbar-dropdown me-2 me-xl-0">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-filter-plus ti-md"></i>
+                  </a>
+                  <div class="dropdown-menu advanced-search py-0 w-100 position-absolute">
+                    <div class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Recherche avancée</h5>
+                      </div>
+                    </div>
+                    <div class="container-fluid scrollable-container py-3">
+                      <h6>Critères concernant le centre d'état civil</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Centre d'Etat Civil</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select" data-allow-clear="true">
+                                <option value="">Toutes</option>
+                                <option value="47">Mairie de Nikolo</option>
+                                <option value="44">Sous Prefecture de Sokouraba</option>
+                                <option value="35">Mairie d'Aboisso</option>
+                                <option value="15">Mairie d'Adjamé</option>
+                                <option value="12">Mairie d'Adzopé</option>
+                                <option value="32" selected="selected">Mairie d'Agboville</option>
+                                <option value="1">Mairie d'Attecoubé</option>
+                                <option value="13">Mairie de Bondoukou</option>
+                                <option value="34">Mairie de Bongouanou</option>
+                                <option value="53">Mairie de Bonon</option>
+                                <option value="33">Mairie de Boundiali</option>
+                                <option value="5">Mairie de Cocody</option>
+                                <option value="3">Mairie de Dimbokro</option>
+                                <option value="16">Mairie de Djébonoua</option>
+                                <option value="29">Mairie de Fandasso</option>
+                                <option value="48">Mairie de Ferkessedougou</option>
+                                <option value="43">Mairie de Ganaoni</option>
+                                <option value="14">Mairie de Grand-Bassam</option>
+                                <option value="42">Mairie de Kanakono</option>
+                                <option value="6">Mairie de Koumassi</option>
+                                <option value="31">Mairie de Kouto</option>
+                                <option value="17">Mairie de Man</option>
+                                <option value="7">Mairie de Marcory</option>
+                                <option value="46">Mairie de Napie</option>
+                                <option value="10">Mairie de San-Pédro</option>
+                                <option value="18">Mairie de Sinematiali</option>
+                                <option value="28">Mairie de Toumodi</option>
+                                <option value="49">Mairie de Toumoukoro</option>
+                                <option value="2">Mairie de Yamoussoukro</option>
+                                <option value="8">Mairie de Yopougon</option>
+                                <option value="9">Mairie du Plateau</option>
+                                <option value="60">MARSEILLE</option>
+                                <option value="57">Ministère des Affaires étrangères</option>
+                                <option value="59">&nbsp;&nbsp;&nbsp;Ambassade de Côte d’Ivoire à Paris</option>
+                                <option value="58">&nbsp;&nbsp;&nbsp;Consulat Général de Côte d’Ivoire à Lyon</option>
+                                <option value="38">Sous-préfecture d'Aboisso</option>
+                                <option value="22">Sous-préfecture d'Adzopé</option>
+                                <option value="45">Sous-préfecture d'Ettrokro</option>
+                                <option value="23">Sous-préfecture de Bondoukou</option>
+                                <option value="36">Sous Prefecture de Bongounou</option>
+                                <option value="54">Sous prefecture de Bonon</option>
+                                <option value="40">Sous-Préfecture de Boundiali</option>
+                                <option value="39">Sous - prefecture de Dimbokro</option>
+                                <option value="24">Sous-préfecture de Djébonoua</option>
+                                <option value="50">Sous-Préfecture de Ferkessedougou</option>
+                                <option value="19">Sous-préfecture de Gabiadji</option>
+                                <option value="37">Sous-préfecture de Grand-Morié</option>
+                                <option value="41">Sous-prefecture de kouto</option>
+                                <option value="20">Sous-préfecture de Man</option>
+                                <option value="51">Sous-préfecture de Ouangolodougou</option>
+                                <option value="11">Sous-Préfecture de San-Pédro</option>
+                                <option value="25">Sous-préfecture de Sédiogo</option>
+                                <option value="26">Sous-préfecture de Sinématiali</option>
+                                <option value="21">Sous-préfecture de Songon</option>
+                                <option value="52">Sous-prefecture de Toumoukoro</option>
+                                <option value="55">Yopougon-Attié (TEST)</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Type d'Acte</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select" data-allow-clear="true">
+                                <option value="" selected="selected">Tous</option>
+                                <option value="4">Acte de reconnaissance</option>
+                                <option value="2">Acte de décès</option>
+                                <option value="1">Acte de naissance</option>
+                                <option value="7">Enfant sans vie</option>
+                                <option value="3">Acte de mariage</option>
+                                <option value="12">Déclaration de Naissance</option>
+                                <option value="13">Déclaration de Décès</option>
+                                <option value="15">Décision de justice</option>
+                                <option value="16">Procès verbal de décourverte</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4 mx-n4" />
+                      <h6>Critères concernant la ou les personnes</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Nom</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Prénom</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Sexe</label>
+                            <div class="col-sm-9">
+                              <div class="form-control border-0">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="sexe"
+                                    id="sexe-masculin"
+                                    value="0" />
+                                  <label class="form-check-label" for="sexe-masculin">Masculin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="enfant-sexe"
+                                    id="sexe-feminin"
+                                    value="1" />
+                                  <label class="form-check-label" for="sexe-feminin">Féminin</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="enfant" id="sexe-tous" value="1" />
+                                  <label class="form-check-label" for="sexe-tous">Tous</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Rôle</label>
+                            <div class="col-sm-9">
+                              <select class="select2 form-select">
+                                <option value="" selected="selected">Tous</option>
+                                <option value="1">Intéressé</option>
+                                <option value="9">Mère de l'épouse</option>
+                                <option value="2">Père</option>
+                                <option value="10">Témoin</option>
+                                <option value="3">Mère</option>
+                                <option value="4">Epoux</option>
+                                <option value="5">Epouse</option>
+                                <option value="6">Père de l'époux</option>
+                                <option value="7">Mère de l'époux</option>
+                                <option value="8">Père de l'épouse</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4 mx-n4" />
+                      <h6>Critères concernant l'acte</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <label class="col-sm-3 col-form-label text-sm-end">Statut</label>
+                            <div class="col-sm-9">
+                              <div class="form-control border-0">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="search-statut-1" value="1" />
+                                  <label class="form-check-label" for="search-statut-1">Actes finalisés</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="search-statut-2" value="2" />
+                                  <label class="form-check-label" for="search-statut-2">Actes non finalisés</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Période recherchée</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control flatpickr-date" placeholder="Du" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control flatpickr-date" placeholder="Au" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Numéro de l'acte</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="De" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="À" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <label class="col-sm-2 col-form-label text-sm-end">Année du registre</label>
+                            <div class="col-sm-10">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="De" />
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="À" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                    <i class="ti ti-search ti-md me-2"></i>
+                    <span class="d-none d-md-inline-block text-muted">Recherche (Ctrl+/)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item me-2 me-xl-0">
+                  <a class="nav-link">
+                    <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26" alt="cote d'ivoire" />
+                  </a>
+                </li>
+                <!-- Language -->
+                <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="ti ti-world rounded-circle ti-md"></i>
+                    <!-- <img src="assets/vendor/fonts/flags/1x1/ci.svg" width="26" style="border: 1px solid #f7f6f9" /> -->
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="en" data-text-direction="ltr">
+                        <span class="align-middle">Anglais</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="fr" data-text-direction="ltr">
+                        <span class="align-middle">Français</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Language -->
+
+                <!-- Notification -->
+                <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-bell ti-md"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-success">0</span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Avis de mention émis rejetés</h6>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-warning">19</span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Avis de mention émis en attente</h6>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-success">0</span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Avis de mention reçus en attente</h6>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-danger">189</span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Avis de publication de mariage en attente</h6>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-success">0</span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Avis de publication de mariage émis"</h6>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div
+                      class="avatar avatar-online rounded-circle bg-label-secondary d-flex align-items-center justify-content-center">
+                      <!-- <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" /> -->
+                      J.D.
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div
+                              class="avatar avatar-online rounded-circle bg-label-secondary d-flex align-items-center justify-content-center">
+                              <!-- <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" /> -->
+                              J.D.
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">Mon profil</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Paramétrage</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Déconnexion</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Recherche..."
+                aria-label="Recherche..." />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-fluid flex-grow-1 container-p-y">
+              <div class="app-chat card overflow-hidden">
+                <div class="row g-0">
+                  <!-- Sidebar Left -->
+                  <div class="col app-chat-sidebar-left app-sidebar overflow-hidden" id="app-chat-sidebar-left">
+                    <div
+                      class="chat-sidebar-left-user sidebar-header d-flex flex-column justify-content-center align-items-center flex-wrap px-4 pt-5">
+                      <div class="avatar avatar-xl avatar-online">
+                        <img src="../../assets/img/avatars/1.png" alt="Avatar" class="rounded-circle" />
+                      </div>
+                      <h5 class="mt-2 mb-0">John Doe</h5>
+                      <span>Admin</span>
+                      <i
+                        class="ti ti-x ti-sm cursor-pointer close-sidebar"
+                        data-bs-toggle="sidebar"
+                        data-overlay
+                        data-target="#app-chat-sidebar-left"></i>
+                    </div>
+                    <div class="sidebar-body px-4 pb-4">
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">About</small>
+                        <textarea
+                          id="chat-sidebar-left-user-about"
+                          class="form-control chat-sidebar-left-user-about mt-3"
+                          rows="4"
+                          maxlength="120">
+Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.</textarea
+                        >
+                      </div>
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Status</small>
+                        <div class="d-grid gap-2 mt-3">
+                          <div class="form-check form-check-success">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="active"
+                              id="user-active"
+                              checked />
+                            <label class="form-check-label" for="user-active">Active</label>
+                          </div>
+                          <div class="form-check form-check-danger">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="busy"
+                              id="user-busy" />
+                            <label class="form-check-label" for="user-busy">Busy</label>
+                          </div>
+                          <div class="form-check form-check-warning">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="away"
+                              id="user-away" />
+                            <label class="form-check-label" for="user-away">Away</label>
+                          </div>
+                          <div class="form-check form-check-secondary">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="offline"
+                              id="user-offline" />
+                            <label class="form-check-label" for="user-offline">Offline</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Settings</small>
+                        <ul class="list-unstyled d-grid gap-2 me-3 mt-3">
+                          <li class="d-flex justify-content-between align-items-center">
+                            <div>
+                              <i class="ti ti-message me-1 ti-sm"></i>
+                              <span class="align-middle">Two-step Verification</span>
+                            </div>
+                            <label class="switch switch-primary me-4 switch-sm">
+                              <input type="checkbox" class="switch-input" checked="" />
+                              <span class="switch-toggle-slider">
+                                <span class="switch-on"></span>
+                                <span class="switch-off"></span>
+                              </span>
+                            </label>
+                          </li>
+                          <li class="d-flex justify-content-between align-items-center">
+                            <div>
+                              <i class="ti ti-bell me-1 ti-sm"></i>
+                              <span class="align-middle">Notification</span>
+                            </div>
+                            <label class="switch switch-primary me-4 switch-sm">
+                              <input type="checkbox" class="switch-input" />
+                              <span class="switch-toggle-slider">
+                                <span class="switch-on"></span>
+                                <span class="switch-off"></span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <i class="ti ti-user-plus me-1 ti-sm"></i>
+                            <span class="align-middle">Invite Friends</span>
+                          </li>
+                          <li>
+                            <i class="ti ti-trash me-1 ti-sm"></i>
+                            <span class="align-middle">Delete Account</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="d-flex mt-4">
+                        <button
+                          class="btn btn-primary"
+                          data-bs-toggle="sidebar"
+                          data-overlay
+                          data-target="#app-chat-sidebar-left">
+                          Logout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Sidebar Left-->
+
+                  <!-- Chat & Contacts -->
+                  <div
+                    class="col app-chat-contacts app-sidebar flex-grow-0 overflow-hidden border-end"
+                    id="app-chat-contacts">
+                    <div class="sidebar-header">
+                      <div class="d-flex align-items-center me-3 me-lg-0">
+                        <div class="avatar d-block flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded-circle bg-label-secondary">JD</span>
+                        </div>
+                        <div class="flex-grow-1 input-group input-group-merge rounded-pill">
+                          <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                          <input
+                            type="text"
+                            class="form-control chat-search-input"
+                            placeholder="Recherche..."
+                            aria-label="Recherche..."
+                            aria-describedby="basic-addon-search31" />
+                        </div>
+                      </div>
+                      <i
+                        class="ti ti-x cursor-pointer d-lg-none d-block position-absolute mt-2 me-1 top-0 end-0"
+                        data-overlay
+                        data-bs-toggle="sidebar"
+                        data-target="#app-chat-contacts"></i>
+                    </div>
+                    <hr class="container-m-nx m-0" />
+                    <div class="sidebar-body">
+                      <!-- Contacts -->
+                      <ul class="list-unstyled chat-contact-list mb-0" id="contact-list">
+                        <li class="chat-contact-list-item chat-contact-list-item-title">
+                          <h5 class="text-primary mb-0">Contacts</h5>
+                        </li>
+                        <li class="chat-contact-list-item contact-list-item-0 d-none">
+                          <h6 class="text-muted mb-0">No Contacts Found</h6>
+                        </li>
+                        <li class="chat-contact-list-item active">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie d'Aboisso</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie d'Adjamé</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie d'Adzopé</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MB</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie de Bondoukou</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MB</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie de Bongouanou</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MB</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie de Bonon</h6>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                          <a class="d-flex align-items-center">
+                            <div class="avatar d-block flex-shrink-0">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MC</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="chat-contact-name text-truncate m-0">Mairie de Cocody</h6>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /Chat contacts -->
+
+                  <!-- Chat History -->
+                  <div class="col app-chat-history bg-body">
+                    <div class="chat-history-wrapper">
+                      <div class="chat-history-header border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex overflow-hidden align-items-center">
+                            <i
+                              class="ti ti-menu-2 ti-sm cursor-pointer d-lg-none d-block me-2"
+                              data-bs-toggle="sidebar"
+                              data-overlay
+                              data-target="#app-chat-contacts"></i>
+                            <div class="avatar d-block flex-shrink-0 me-3">
+                              <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="m-0">Mairie d'Aboisso</h6>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <!-- <i class="ti ti-phone-call cursor-pointer d-sm-block d-none me-3"></i>
+                            <i class="ti ti-video cursor-pointer d-sm-block d-none me-3"></i>
+                            <i class="ti ti-search cursor-pointer d-sm-block d-none me-3"></i> -->
+                            <div class="dropdown d-flex align-self-center">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="chat-header-actions"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="ti ti-dots-vertical"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="chat-header-actions">
+                                <a class="dropdown-item" href="javascript:void(0);">Action 1</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Action 2</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Action 3</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-history-body bg-body">
+                        <ul class="list-unstyled chat-history">
+                          <li class="chat-message chat-message-right">
+                            <div class="d-flex overflow-hidden">
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">Qu'est-ce que le Lorem Ipsum?</p>
+                                </div>
+                                <div class="text-end text-muted mt-1">
+                                  <i class="ti ti-checks ti-xs me-1 text-success"></i>
+                                  <small>10:00 AM</small>
+                                </div>
+                              </div>
+                              <div class="user-avatar flex-shrink-0 ms-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">JD</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message">
+                            <div class="d-flex overflow-hidden">
+                              <div class="user-avatar flex-shrink-0 me-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                                </div>
+                              </div>
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">
+                                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise
+                                    en page avant impression.
+                                  </p>
+                                </div>
+                                <div class="text-muted mt-1">
+                                  <small>10:02 AM</small>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message chat-message-right">
+                            <div class="d-flex overflow-hidden">
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">D'où vient-il?</p>
+                                </div>
+                                <div class="text-end text-muted mt-1">
+                                  <i class="ti ti-checks ti-xs me-1 text-success"></i>
+                                  <small>10:03 AM</small>
+                                </div>
+                              </div>
+                              <div class="user-avatar flex-shrink-0 ms-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">JD</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message">
+                            <div class="d-flex overflow-hidden">
+                              <div class="user-avatar flex-shrink-0 me-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                                </div>
+                              </div>
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">Contrairement à une opinion répandue</p>
+                                </div>
+                                <div class="chat-message-text mt-2">
+                                  <p class="mb-0">le Lorem Ipsum n'est pas simplement du texte aléatoire.</p>
+                                </div>
+                                <div class="text-muted mt-1">
+                                  <small>10:05 AM</small>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message chat-message-right">
+                            <div class="d-flex overflow-hidden">
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">Pourquoi l'utiliser?</p>
+                                </div>
+                                <div class="text-end text-muted mt-1">
+                                  <i class="ti ti-checks ti-xs me-1 text-success"></i>
+                                  <small>10:06 AM</small>
+                                </div>
+                              </div>
+                              <div class="user-avatar flex-shrink-0 ms-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">JD</span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message">
+                            <div class="d-flex overflow-hidden">
+                              <div class="user-avatar flex-shrink-0 me-3">
+                                <div class="avatar avatar-sm">
+                                  <span class="avatar-initial rounded-circle bg-label-secondary">MA</span>
+                                </div>
+                              </div>
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">
+                                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens
+                                    est source de distractions
+                                  </p>
+                                </div>
+                                <div class="chat-message-text mt-2">
+                                  <p class="mb-0">et empêche de se concentrer sur la mise en page elle-même.</p>
+                                </div>
+                                <div class="text-muted mt-1">
+                                  <small>10:08 AM</small>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Chat message form -->
+                      <div class="chat-history-footer shadow-sm">
+                        <form class="form-send-message d-flex justify-content-between align-items-center">
+                          <input
+                            class="form-control message-input border-0 me-3 shadow-none"
+                            placeholder="Taper votre message ici" />
+                          <div class="message-actions d-flex align-items-center">
+                            <button class="btn btn-primary d-flex send-msg-btn">
+                              <i class="ti ti-send me-md-1 me-0"></i>
+                              <span class="align-middle d-md-inline-block d-none">Envoyer</span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Chat History -->
+
+                  <!-- Sidebar Right -->
+                  <div class="col app-chat-sidebar-right app-sidebar overflow-hidden" id="app-chat-sidebar-right">
+                    <div
+                      class="sidebar-header d-flex flex-column justify-content-center align-items-center flex-wrap px-4 pt-5">
+                      <div class="avatar avatar-xl avatar-online">
+                        <img src="../../assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                      </div>
+                      <h6 class="mt-2 mb-0">Felecia Rower</h6>
+                      <span>NextJS Developer</span>
+                      <i
+                        class="ti ti-x ti-sm cursor-pointer close-sidebar d-block"
+                        data-bs-toggle="sidebar"
+                        data-overlay
+                        data-target="#app-chat-sidebar-right"></i>
+                    </div>
+                    <div class="sidebar-body px-4 pb-4">
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">About</small>
+                        <p class="mb-0 mt-3">
+                          A Next. js developer is a software developer who uses the Next. js framework alongside ReactJS
+                          to build web applications.
+                        </p>
+                      </div>
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Personal Information</small>
+                        <ul class="list-unstyled d-grid gap-2 mt-3">
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-mail ti-sm"></i>
+                            <span class="align-middle ms-2">josephGreen@email.com</span>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-phone-call ti-sm"></i>
+                            <span class="align-middle ms-2">+1(123) 456 - 7890</span>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-clock ti-sm"></i>
+                            <span class="align-middle ms-2">Mon - Fri 10AM - 8PM</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mt-4">
+                        <small class="text-muted text-uppercase">Options</small>
+                        <ul class="list-unstyled d-grid gap-2 mt-3">
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-badge ti-sm"></i>
+                            <span class="align-middle ms-2">Add Tag</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-star ti-sm"></i>
+                            <span class="align-middle ms-2">Important Contact</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-photo ti-sm"></i>
+                            <span class="align-middle ms-2">Shared Media</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-trash ti-sm"></i>
+                            <span class="align-middle ms-2">Delete Contact</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-ban ti-sm"></i>
+                            <span class="align-middle ms-2">Block Contact</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Sidebar Right -->
+
+                  <div class="app-overlay"></div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/moment/moment.js"></script>
+    <script src="assets/vendor/libs/flatpickr/flatpickr.js"></script>
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="assets/vendor/libs/select2/select2.js"></script>
+    <script src="assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/app-chat.js"></script>
+  </body>
+</html>
